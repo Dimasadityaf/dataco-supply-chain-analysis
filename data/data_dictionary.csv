@@ -1,0 +1,29 @@
+column_name,data_type,description
+order_id,INTEGER,ID unik pesanan pelanggan
+order_item_id,INTEGER,ID unik item barang dalam pesanan (Primary Key)
+order_date,DATETIME,Tanggal dan waktu pesanan dibuat (YYYY-MM-DD HH:MM:SS)
+shipping_date,DATETIME,Tanggal dan waktu barang dikirim (YYYY-MM-DD HH:MM:SS)
+type,TEXT,Metode pembayaran (DEBIT, TRANSFER, PAYMENT, CASH)
+days_for_shipping_real,INTEGER,Jumlah hari riil pengiriman
+days_for_shipment_scheduled,INTEGER,Target jadwal hari pengiriman
+delivery_status,TEXT,Status pengiriman (Late delivery, Shipping on time, Advance shipping, Shipping canceled)
+late_delivery_risk,INTEGER,Indikator keterlambatan (1 = Terlambat, 0 = Tepat Waktu)
+category_name,TEXT,Nama kategori produk
+department_name,TEXT,Nama departemen produk
+product_name,TEXT,Nama spesifik produk
+customer_id,INTEGER,ID unik pelanggan
+customer_segment,TEXT,Segmen pelanggan (Consumer, Corporate, Home Office)
+customer_country,TEXT,Negara asal pelanggan
+market,TEXT,Pasar tujuan pengiriman (Europe, LATAM, Pacific Asia, USCA, Africa)
+order_region,TEXT,Wilayah geografis pengiriman pesanan
+order_country,TEXT,Negara tujuan pesanan
+order_status,TEXT,Status pesanan (COMPLETE, PENDING, CLOSED, CANCELED, SUSPECTED_FRAUD, dll.)
+shipping_mode,TEXT,Metode pengiriman (Standard Class, First Class, Second Class, Same Day)
+order_item_quantity,INTEGER,Jumlah kuantitas produk yang dipesan
+order_item_discount,REAL,Nilai nominal potongan harga (diskon)
+order_item_discount_rate,REAL,Persentase diskon yang diberikan
+order_item_product_price,REAL,Harga satuan produk sebelum diskon
+sales,REAL,Total nilai kotor transaksi item (quantity * price)
+order_item_total,REAL,Total penerimaan bersih setelah diskon
+order_profit_per_order,REAL,Keuntungan atau kerugian bersih yang dihasilkan item
+order_item_profit_ratio,REAL,Rasio profit terhadap nilai transaksi

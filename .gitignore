@@ -1,0 +1,21 @@
+# Folder data mentah (berisi data sensitif & ukuran besar)
+data_raw/
+
+# File data bersih lokal uncompressed (>50 MB)
+dataco_clean.csv
+
+# Database lokal SQLite
+*.db
+*.sqlite3
+
+# Cache Python & Jupyter Notebook
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Environment & OS
+.env
+.venv/
+env/
+.DS_Store
+Thumbs.db

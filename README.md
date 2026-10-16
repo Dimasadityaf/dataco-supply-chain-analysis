@@ -105,7 +105,7 @@ dataco-supply-chain-analysis/
 ## 📈 Alur Kerja Proyek
 - [x] **Fase 0: Persiapan Proyek & Repositori Git**
 - [x] **Fase 1: Pemahaman Data & Rumusan Masalah Bisnis**
-- [ ] **Fase 2: Pembersihan Data & Ekstraksi SQLite (Python)**
+- [x] **Fase 2: Pembersihan Data & Ekstraksi SQLite (Python)**
 - [ ] **Fase 3: Eksplorasi & Analisis Data Menggunakan SQL (Level 1–4)**
 - [ ] **Fase 4: Perancangan Dashboard Interaktif (Looker Studio)**
 - [ ] **Fase 5: Sintesis Temuan & Rekomendasi Bisnis**

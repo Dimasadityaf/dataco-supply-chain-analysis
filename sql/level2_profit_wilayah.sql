@@ -1,6 +1,3 @@
--- Level 2: Profitabilitas wilayah dan segmen pelanggan
--- Jalankan query pada database SQLite yang memiliki tabel `orders`.
-
 -- 3. Profit menurut kombinasi pasar dan wilayah.
 SELECT
     market,

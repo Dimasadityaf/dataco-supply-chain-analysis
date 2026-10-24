@@ -1,6 +1,3 @@
--- Level 3: Tren waktu dan pola musiman
--- Jalankan query pada database SQLite yang memiliki tabel `orders`.
-
 -- 5. Tren penjualan dan profitabilitas bulanan dari Januari 2015.
 SELECT
     strftime('%Y-%m', order_date) AS order_month,
@@ -15,8 +12,7 @@ FROM orders
 GROUP BY strftime('%Y-%m', order_date)
 ORDER BY order_month;
 
--- 6. Rasio keterlambatan per bulan pesanan dibuat.
--- Denominator mencakup seluruh baris item yang tercatat pada bulan tersebut.
+-- 6. Rasio keterlambatan per bulan
 SELECT
     strftime('%Y-%m', order_date) AS order_month,
     COUNT(*) AS total_order_items,

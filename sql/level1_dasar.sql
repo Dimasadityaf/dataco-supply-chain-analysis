@@ -1,6 +1,3 @@
--- Level 1: Dasar logistik dan penjualan
--- Jalankan query pada database SQLite yang memiliki tabel `orders`.
-
 -- 1. Persentase baris pesanan berisiko terlambat menurut mode pengiriman.
 SELECT
     shipping_mode,

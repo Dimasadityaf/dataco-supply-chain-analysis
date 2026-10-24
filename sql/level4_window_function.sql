@@ -1,6 +1,3 @@
--- Level 4: Risiko dan optimasi produk
--- Jalankan query pada database SQLite yang memiliki tabel `orders`.
-
 -- 7. Lima produk dengan profit paling negatif di setiap kategori.
 WITH product_profit AS (
     SELECT

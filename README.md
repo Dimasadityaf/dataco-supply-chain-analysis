@@ -139,6 +139,38 @@ Laporan eksekutif lengkap dengan analisis detail dan rencana aksi manajerial dap
 
 ---
 
+## 🚀 Cara Menjalankan Proyek Secara Lokal (Reproducibility)
+
+Untuk mereproduksi analisis atau menjalankan query SQL di komputer lokal Anda:
+
+1. **Clone Repositori**:
+   ```bash
+   git clone https://github.com/Dimasadityaf/dataco-supply-chain-analysis.git
+   cd dataco-supply-chain-analysis
+   ```
+
+2. **Ekstrak Dataset Bersih**:
+   Dataset bersih terkompresi tersedia di folder `data/`:
+   ```bash
+   # Ekstrak data/dataco_clean.csv.gz menjadi dataco_clean.csv jika diperlukan
+   python -c "import gzip, shutil; shutil.copyfileobj(gzip.open('data/dataco_clean.csv.gz', 'rb'), open('dataco_clean.csv', 'wb'))"
+   ```
+
+3. **Inisialisasi Database SQLite**:
+   ```bash
+   python scripts/clean_data.py
+   ```
+   *Skrip ini akan memverifikasi dataset dan membuat database `dataco.db` beserta tabel `orders`.*
+
+4. **Jalankan Query SQL**:
+   Gunakan CLI SQLite atau ekstensi DB Browser/DBeaver untuk menjalankan skrip query di folder `sql/`:
+   * `sql/level1_dasar.sql`
+   * `sql/level2_profit_wilayah.sql`
+   * `sql/level3_tren_bulanan.sql`
+   * `sql/level4_window_function.sql`
+
+---
+
 ## 📈 Alur Kerja Proyek
 - [x] **Fase 0: Persiapan Proyek & Repositori Git**
 - [x] **Fase 1: Pemahaman Data & Rumusan Masalah Bisnis**
@@ -146,4 +178,11 @@ Laporan eksekutif lengkap dengan analisis detail dan rencana aksi manajerial dap
 - [x] **Fase 3: Eksplorasi & Analisis Data Menggunakan SQL (Level 1–4)**
 - [x] **Fase 4: Perancangan Dashboard Interaktif (Looker Studio)**
 - [x] **Fase 5: Sintesis Temuan & Rekomendasi Bisnis**
-- [ ] **Fase 6: Finalisasi & Publikasi Portofolio**
+- [x] **Fase 6: Finalisasi & Publikasi Portofolio**
+
+---
+
+## 👤 Kontak & Kontribusi
+* **Author**: Dimas Aditya ([@Dimasadityaf](https://github.com/Dimasadityaf))
+* **Proyek**: DataCo Smart Supply Chain & Profitability Analysis
+* Terbuka untuk diskusi, masukan, dan kolaborasi profesional di bidang Data Analytics & Business Intelligence.

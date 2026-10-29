@@ -102,11 +102,39 @@ dataco-supply-chain-analysis/
 
 ---
 
+---
+
+## 🖥️ Dashboard Interaktif (Looker Studio)
+
+Dashboard interaktif telah dipublikasikan dan dapat diakses langsung secara publik melalui tautan berikut:
+🔗 **[Live Interactive Dashboard - Looker Studio](https://datastudio.google.com/reporting/594a9977-9064-4861-a246-9080e7188b60)**
+
+![Supply Chain & Profitability Dashboard](dashboard/screenshot.png)
+
+### 📌 Ringkasan KPI Utama (Executive Summary)
+* **Total Sales**: **$36,8 Juta**
+* **Total Profit**: **$4,0 Juta**
+* **Profit Margin**: **10,8%**
+* **Total Orders**: **65.752 Pesanan**
+* **Overall Late Delivery Rate**: **54,8%** (lebih dari separuh pesanan mengalami risiko keterlambatan)
+
+### 🔍 Komponen Visualisasi & Temuan Kunci Dashboard
+1. **Monthly Sales & Profit Trend (Jan 2015 – Jan 2018)**
+   * Menunjukkan performa penjualan dan profit bulanan yang relatif konsisten dan stabil di kisaran $1 juta/bulan dengan margin stabil ~10%. Penurunan tajam di akhir periode (Desember 2017 – Januari 2018) mencerminkan *cutoff* batas pencatatan transaksi dataset.
+2. **Profit by Market**
+   * **Europe** ($1,2 juta) dan **LATAM** ($1,1 juta) menjadi kontributor profit terbesar bagi bisnis (menyumbang >55% dari total laba), diikuti oleh **Pacific Asia** ($857,8 ribu), **USCA** ($564,3 ribu), dan **Africa** ($252,1 ribu).
+3. **Late Delivery Rate by Shipping Mode (Critical Logistics Insight)**
+   * Terdapat anomali operasional yang sangat krusial: Mode pengiriman premium **First Class** justru mengalami tingkat keterlambatan tertinggi sebesar **95,3%**, disusul **Second Class** (**76,6%**), **Same Day** (**45,7%**), dan **Standard Class** (**38,1%**). Hal ini menunjukkan adanya kegagalan SLA pada layanan berbayar lebih tinggi yang berisiko merusak kepuasan pelanggan.
+4. **10 Lowest Categories by Profit**
+   * Kategori dengan kontribusi profit paling marjinal/terendah mencakup *Strength Training* ($332,3), *CDs* ($383,8), *As Seen on TV!* ($714,4), *Books* ($883), dan *Toys* ($900,7). Kategori-kategori ini membutuhkan evaluasi inventaris atau strategi harga untuk menghindari pemborosan alokasi modal kerja.
+
+---
+
 ## 📈 Alur Kerja Proyek
 - [x] **Fase 0: Persiapan Proyek & Repositori Git**
 - [x] **Fase 1: Pemahaman Data & Rumusan Masalah Bisnis**
 - [x] **Fase 2: Pembersihan Data & Ekstraksi SQLite (Python)**
 - [x] **Fase 3: Eksplorasi & Analisis Data Menggunakan SQL (Level 1–4)**
-- [ ] **Fase 4: Perancangan Dashboard Interaktif (Looker Studio)**
+- [x] **Fase 4: Perancangan Dashboard Interaktif (Looker Studio)**
 - [ ] **Fase 5: Sintesis Temuan & Rekomendasi Bisnis**
 - [ ] **Fase 6: Finalisasi & Publikasi Portofolio**

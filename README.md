@@ -180,9 +180,3 @@ Untuk mereproduksi analisis atau menjalankan query SQL di komputer lokal Anda:
 - [x] **Fase 5: Sintesis Temuan & Rekomendasi Bisnis**
 - [x] **Fase 6: Finalisasi & Publikasi Portofolio**
 
----
-
-## 👤 Kontak & Kontribusi
-* **Author**: Dimas Aditya ([@Dimasadityaf](https://github.com/Dimasadityaf))
-* **Proyek**: DataCo Smart Supply Chain & Profitability Analysis
-* Terbuka untuk diskusi, masukan, dan kolaborasi profesional di bidang Data Analytics & Business Intelligence.

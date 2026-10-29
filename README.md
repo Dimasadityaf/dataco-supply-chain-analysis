@@ -102,8 +102,6 @@ dataco-supply-chain-analysis/
 
 ---
 
----
-
 ## 🖥️ Dashboard Interaktif (Looker Studio)
 
 Dashboard interaktif telah dipublikasikan dan dapat diakses langsung secara publik melalui tautan berikut:
@@ -130,11 +128,22 @@ Dashboard interaktif telah dipublikasikan dan dapat diakses langsung secara publ
 
 ---
 
+## 📑 Sintesis Analitis & Rekomendasi Bisnis
+Laporan eksekutif lengkap dengan analisis detail dan rencana aksi manajerial dapat dilihat pada dokumen:
+👉 **[Laporan Kesimpulan Bisnis & Rekomendasi Manajerial (docs/kesimpulan_bisnis.md)](docs/kesimpulan_bisnis.md)**
+
+* **Audit & Renegosiasi SLA Kurir Ekspres**: Meninjau ulang target jadwal pengiriman First Class (95,3% terlambat) dan menegosiasikan pinalti keterlambatan pada kontrak 3PL.
+* **Dynamic Discount Throttling**: Proteksi batas minimum margin (*floor margin*) pada keranjang belanja agar diskon tidak menyebabkan profit item menjadi negatif.
+* **Mitigasi Double Risk**: Mengurangi 7.678 pesanan yang menderita kombinasi rugi finansial dan keterlambatan barang.
+* **Pengetatan Filter Fraud Transaksi**: Penerapan 3D Secure & AVS khusus wilayah berisiko tinggi (Eropa & LATAM) untuk melindungi potensi kerugian hingga ~$826 ribu.
+
+---
+
 ## 📈 Alur Kerja Proyek
 - [x] **Fase 0: Persiapan Proyek & Repositori Git**
 - [x] **Fase 1: Pemahaman Data & Rumusan Masalah Bisnis**
 - [x] **Fase 2: Pembersihan Data & Ekstraksi SQLite (Python)**
 - [x] **Fase 3: Eksplorasi & Analisis Data Menggunakan SQL (Level 1–4)**
 - [x] **Fase 4: Perancangan Dashboard Interaktif (Looker Studio)**
-- [ ] **Fase 5: Sintesis Temuan & Rekomendasi Bisnis**
+- [x] **Fase 5: Sintesis Temuan & Rekomendasi Bisnis**
 - [ ] **Fase 6: Finalisasi & Publikasi Portofolio**
